@@ -1,16 +1,23 @@
 {
   "manifest_version": 2,
-
+  "name": "__MSG_extName__",
+  "default_locale": "zh_CN",
+  "description": "__MSG_extDesp__",
   "name": "emoji url",
   "description": "it is more than words",
-  "version": "1.0",
-
+  "version": "1.0.0",
+  "icons": {
+  	"256": "res/icon_256.png",
+	"128": "res/icon_128.png",
+	"64": "res/icon_64.png",
+	"32": "res/icon_64.png",
+	"16": "res/icon_64.png"
+	},
   "browser_action": {
-    "default_icon": "doge.png",
-    "default_popup": "popup.html"
+    "default_icon": "res/icon_256.png",
+    "default_popup": "res/popup.html"
   },
   "permissions": [
-    "activeTab",
     "clipboardWrite"
   ]
 }

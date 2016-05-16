@@ -1,9 +1,4 @@
 <!doctype html>
-<!--
- This page is shown when the extension button is clicked, because the
- "browser_action" field in manifest.json contains the "default_popup" key with
- value "popup.html".
- -->
 <html>
   <head>
     <title>Getting Started Extension's Popup</title>
@@ -22,6 +17,24 @@
         height: 21px;
         width: 21px;
         background: transparent url(./emoji.png) no-repeat scroll 0 0;
+      }
+      /* 设置滚动条的样式 */
+      ::-webkit-scrollbar {
+          width: 10px;
+      }
+      /* 滚动槽 */
+      ::-webkit-scrollbar-track {
+          -webkit-box-shadow: inset 0 0 2px rgba(0,0,0,0.3);
+          border-radius: 2px;
+      }
+      /* 滚动条滑块 */
+      ::-webkit-scrollbar-thumb {
+          border-radius: 2px;
+          background: rgba(0,0,0,0.1);
+          -webkit-box-shadow: inset 0 0 2px rgba(0,0,0,0.5);
+      }
+      ::-webkit-scrollbar-thumb:window-inactive {
+          background: rgba(255,0,0,0.4);
       }
     </style>
 
